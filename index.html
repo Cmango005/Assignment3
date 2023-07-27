@@ -3,20 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fruit Bazar</title>
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
     <style>
       .team-member{
         background-image: url("images/team.png");
       }
+      .font-lato{
+        font-family: 'Lato', sans-serif;
+      }
     </style>
 </head>
 <body>
-    <header class="container mx-auto">
+    <header class="container mx-auto font-lato">
         <nav class="mt-4">
-            <div class="navbar lg:flex justify-between border-2 rounded-full bg-red-400 ">
+            <div class="navbar flex justify-between border-2 rounded-full bg-red-400 ">
                 <div class="dropdown ">
                     <label tabindex="0" class="btn btn-ghost lg:hidden">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
@@ -90,11 +97,11 @@
               </div>
             </div>
         </div>
-        <div class=" -mt-52 lg:-mt-80 max-w-4xl mx-auto drop-shadow-lg space-y-5">
-            <div class="text-center ">
-                <h1 class="text-5xl text-white">Exotic tastes at your <br>doorstep</h1>
-                <p class="text-2xl text-white">We supply highly quality organic products</p>
-                <button class="px-8 py-5 border-2 text-white bg-red-400 rounded-md">Shop Now</button>
+        <div class=" -mt-36 lg:-mt-72 max-w-4xl mx-auto drop-shadow-lg space-y-5">
+            <div class="text-center  ">
+                <h1 class="sm:text-sm lg:text-5xl text-white">Exotic tastes at your <br>doorstep</h1>
+                <p class="sm:text-xs  lg:text-2xl text-white">We supply highly quality organic products</p>
+                <button class="sm:px-10 lg:px-8 py-4 border-2 text-white bg-red-400 rounded-md">Shop Now</button>
             </div>
             <div class="hidden lg:grid grid-cols-5 mx-auto shadow-xl bg-white max-w-5xl h-30 rounded-lg ">
                <div class="text-center items-center">
@@ -122,8 +129,8 @@
        </div>
     </header>
     <main>
-        <section class="container mx-auto mt-10">
-           <div class=" flex flex-row lg:flex justify-between">
+        <section class="container mx-auto mt-10 font-lato">
+           <div class=" flex flex-col lg:flex-row justify-between">
              <div class="space-y-5">
               <h2 class="text-5xl font-extrabold">
                 Deal of the day
@@ -160,7 +167,7 @@
               </div>
              </div>
            </div>
-           <div class="grid grid-cols-4 gap-10 mt-10">
+           <div class="grid grid-cols-1 lg:grid-cols-4 gap-10 mt-10">
             <div class="card w-80 bg-base-100 shadow-xl">
               <figure><img src="/images/fruit6.png" alt="" /></figure>
               <div class="card-body">
@@ -356,11 +363,11 @@
               </div>
             </div>
           </div>
-          <div class="text-center mt-6">
+          <div class=" ml-24 lg:text-center mt-6">
             <button class="btn bg-red-400 text-white ">Shop All</button>
           </div>
         </section>
-        <section class="bg-white bg-no-repeat container mx-auto bg-cover team-member text-center my-10">
+        <section class="bg-white bg-no-repeat container mx-auto bg-cover team-member text-center my-10 font-lato">
           <div class=" p-20 bg-[#121212b3]">
             <div >
               <h2 class="font-bold text-3xl mb-2 text-white">Meet the team section</h2>
@@ -624,7 +631,7 @@
             </div>
           </div>
         </section>
-        <section class="md:container md:mx-auto mt-10 space-y-10">
+        <section class="md:container md:mx-auto mt-10 space-y-10 font-lato">
            <div class="text-center space-y-5">
              <h2 class="font-extrabold text-5xl ">
               Why Choose Us
@@ -699,12 +706,12 @@
            </div>
         </section>     
     </main> 
-    <footer class="footer footer-center p-10 bg-base-200 text-base-content mt-10 bg-black rounded">
+    <footer class="footer footer-center p-10 bg-base-200 text-base-content mt-10 bg-black rounded font-lato">
       <div class=" flex lg:mx-auto justify-center ">
         <img class="w-11 h-10 " src="images/logo.png" alt="">
         <h3><a class="btn btn-ghost normal-case text-xl text-white">Fruit Burst</a></h3>
       </div >
-      <div class="grid grid-flow-col gap-4 text-white">
+      <div class="grid lg:grid-flow-col grid-flow-row gap-4 text-white">
         <a class="link link-hover">Home</a> 
         <a class="link link-hover">About Us</a> 
         <a class="link link-hover">Shop</a> 
